@@ -6,26 +6,20 @@
 :root {
   --header-height: 3.5rem;
 
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: #a680d3;
-  --title-color: hsl(228, 18%, 16%);
+  --title-color: #212430;
   --text-color: hsl(228, 8%, 56%);
   --body-color: hsl(0, 0%, 100%);
   --shadow-color: hsla(228, 80%, 4%, .1);
 
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Plus Jakarta Sans", sans-serif;
   --normal-font-size: .938rem;
   --smaller-font-size: .75rem;
   --tiny-font-size: .75rem;
 
-  /*========== Font weight ==========*/
   --font-regular: 400;
   --font-semi-bold: 600;
 
-  /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
 }
@@ -98,13 +92,12 @@ button {
   width: 100%;
   height: 100%;
   display: flex;
-  background-color: #8d68bc;
 }
 
 .Video__Container{
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-color: var(--body-color);
+  box-shadow: 0 2px 24px var(--shadow-color);
+  border-radius: 1rem;
     width: 60%; 
     height: 100%;
     overflow: hidden;
@@ -112,7 +105,7 @@ button {
 
 video {
     width: 100%;        
-    height: 50vh;       
+    height: 49vh;       
     object-fit: cover;  
     display: block;    
     border-radius: 8px; 
@@ -123,8 +116,7 @@ video {
     width: 100%;
     margin-top: 10px;
     display: flex;       
-    flex-direction: column;
-    gap: 10px;        
+    flex-direction: column;      
 }
 .Video__Title {
     font-size: 1.5rem;
@@ -134,14 +126,14 @@ video {
 }
 
 .Info {
-    width: 100%;
-    display: flex;  
-    gap: 20px;  
-    padding: 0 20px;
+  margin-top: 10px;
+  width: 100%;
+  display: flex;  
+  gap: 20px;  
+  padding: 0 20px;
 }
 
 .Info span {
-    display: flex;
     font-size: .85rem;
     font-weight: 500;
     display: flex;  
@@ -150,8 +142,8 @@ video {
 }
 
 .Resumo {
-    width: 100%;
-    margin-top: 35px;
+    width: 100%; 
+    margin-top: 15px;
     display: flex;  
     flex-direction: column;
     gap: 10px;  
@@ -170,6 +162,180 @@ video {
     font-size: .85rem;
     color: var(--text-color);
     padding: 0 20px;
+}
+
+.Info__Buttons {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;  
+    gap: 10px;  
+    padding: 0 20px;
+}
+
+.Info__Buttons button {
+    font-size: .85rem;
+    font-weight: 500;
+
+    background-color: var(--color);
+    padding: 10px 15px;
+    border-radius: .75rem;
+    color: var(--text-color-info);
+
+    display: flex;  
+    align-items: center;     
+    gap: 5px;
+}
+
+.Info__Buttons label {
+    font-size: .85rem;
+    font-weight: 500;
+    display: flex;  
+    align-items: center;     
+    gap: 5px;  
+    background-color: var(--color);
+    padding: 10px 15px;
+    border-radius: .75rem;
+    color: var(--text-color-info);
+}
+
+.Info__Buttons label input {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 30%;
+    border: 2px solid #ffffff;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color .2s;
+}
+
+.Info__Buttons label input:checked {
+    background-color: #ffffff;
+}
+
+/*=============== CONTEÚDOS ===============*/
+
+.Conteúdos__Container {
+  width: 40%; 
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.Módulo {
+  background-color: var(--body-color);
+  box-shadow: 0 2px 24px var(--shadow-color);
+  border-radius: 1rem;
+  width: 95%;
+  height: auto;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.Módulo__Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Módulo__Header h2 {
+  margin: 0;
+  font-size: var(--normal-font-size);
+  color: var(--title-color);
+}
+
+.Conteúdos {
+  display: flex;         
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.Aula {
+  background: #b1ffae67;
+  color: var(--title-color);
+  border-radius: 1rem;
+  padding: 12px 16px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Aula i {
+  font-size: 1.5rem;
+  color: #41d341;
+}
+
+
+.Assistindo {
+  background: #d6aeff67;
+}
+
+.Assistindo i {
+  font-size: 1.5rem;
+  color: #8d68bc;
+}
+
+.Bloqueado {
+  background: #ffaeae67;
+}
+
+.Bloqueado i {
+  font-size: 1.5rem;
+  color: #d34141;
+}
+
+.Conteúdos__Progresso {
+  background-color: var(--body-color);
+  box-shadow: 0 2px 24px var(--shadow-color);
+  border-radius: 1rem;
+  padding: 20px;
+
+  width: 95%;
+  height: 50%;
+}
+
+.Progresso__Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.Progresso__Header h2 {
+  font-size: 1rem;
+  color: #1f2937;
+  margin: 0;
+}
+
+.Progresso__Percentual {
+  font-weight: bold;
+  color: #8d68bc;
+  font-size: var(--normal-font-size);
+}
+
+.Progresso__Texto {
+  margin: 0 0 10px;
+  color: #555;
+  font-size: 0.85rem;
+}
+
+.Barra__Externa {
+  background: #ece5f1;
+  border-radius: 1rem;
+  height: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.Barra__Interna {
+  height: 100%;
+  background: linear-gradient(90deg, #7b54af, #c8aaee);
+  border-radius: 999px;
+  transition: width 0.3s ease-in-out;
 }
 
 /*=============== HEADER ===============*/

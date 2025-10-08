@@ -584,6 +584,9 @@ button {
     padding-inline: .5rem;
     margin-inline: auto;
   }
+  .Início {
+    gap: 11.5px;
+  }
 }
 
 /* For large devices */
