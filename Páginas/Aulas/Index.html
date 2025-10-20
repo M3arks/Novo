@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+      <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+      <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+      <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+      <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+      <link rel="icon" type="favicon" href="../../Assets/Imagens/Imagem_Color_1.png">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="Styles.css">
+      <link rel="stylesheet" href="Loading.css">
+
+      <title>HelpEnem | Plataforma do Aluno</title>
+   </head>
+   <body class="fade-in">
+      <!--=============== HEADER ===============-->
+      <header class="header" id="header">
+         <div class="header__container">
+            <a href="#" class="header__logo">
+               <img class="header__image" src="../../Assets/Imagens/Imagem_Color_1.png" alt="image">
+               <span>HelpEnem</span>
+            </a>
+            
+            <button class="header__toggle" id="header-toggle">
+               <i class="ri-menu-line"></i>
+            </button>
+         </div>
+      </header>
+
+      <!--=============== SIDEBAR ===============-->
+      <nav class="sidebar" id="sidebar">
+         <div class="sidebar__container">
+            <div class="sidebar__user">
+               <div class="sidebar__img">
+                  <img src="../../Assets/Imagens/perfil.png" alt="image">
+               </div>
+   
+               <div class="sidebar__info">
+                  <h3>Lucas Methil</h3>
+                  <span>Estudante</span>
+               </div>
+            </div>
+
+            <div class="sidebar__content">
+               <div>
+                  <div class="sidebar__list">
+                     <a href="#" class="sidebar__link active-link">
+                        <i class="fi fi-sr-home"></i>
+                        <span>Início</span>
+                     </a>
+                     
+                     <a href="#" class="sidebar__link">
+                        <i class="fi fi-sr-play-alt"></i>
+                        <span>Aulas</span>
+                     </a>
+
+                     <a href="#" class="sidebar__link">
+                        <i class="fi fi-sr-document"></i>
+                        <span>Redação</span>
+                     </a>
+
+                     <a href="#" class="sidebar__link">
+                        <i class="fi fi-sr-memo-circle-check"></i>
+                        <span>Questões</span>
+                     </a>
+
+                     <a href="#" class="sidebar__link">
+                        <i class="fi fi-ss-book-open-cover"></i>
+                        <span>Simulados</span>
+                     </a>
+
+                      <a href="#" class="sidebar__link">
+                        <i class="fi fi-sr-memo-pad"></i>
+                        <span>Provas Anteriores</span>
+                     </a>
+                  </div>
+               </div>
+
+               <span class="divider span-class"><hr /></span>
+
+               <div>
+                  <div class="sidebar__list">
+                     <a href="#" class="sidebar__link">
+                        <i class="fi fi-sr-chart-pie-alt"></i>
+                        <span>Estatísticas</span>
+                     </a>
+
+                     <a href="#" class="sidebar__link">
+                        <i class="fi fi-sr-calendar-lines-pen"></i>
+                        <span>Cronogramas</span>
+                     </a>
+
+                     <a href="#" class="sidebar__link">
+                        <i class="fi fi-sr-comment"></i>
+                        <span>Comunidade</span>
+                     </a>
+
+                     <a href="#" class="sidebar__link">
+                        <i class="fi fi-sr-bulb"></i>
+                        <span>Mentoria</span>
+                     </a>
+
+                     <a href="#" class="sidebar__link">
+                        <i class="fi fi-sr-sparkles"></i>
+                        <span>Eventos</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <span class="divider span-class"><hr /></span>
+            
+             <div class="sidebar__actions__2">
+               <button class="sidebar__link" onclick="window.location.href='../Início/Início.html'">
+                  <i class="fi fi-sr-leave"></i>
+                  <span>Sair</span>
+               </button>
+            </div>
+         </div>
+      </nav>
+
+      <!--=============== MAIN ===============-->
+      <main class="main container" id="main">
+        <section class="Videoaula">
+            <div class="Video__Container">
+                <video controls><source src="../../Assets/Imagens/Aula.mp4" type="video/mp4"></video>
+
+
+                <div class="Video__Content">
+                    <h2 class="Video__Title">História e Cultura Afro-Indígena Brasileira</h2>
+
+                    <div class="Info">
+                        <span><i class="fi fi-sr-cube"></i>Módulo 01</span>
+                        <span><i class="fi fi-sr-play-alt"></i>Aula 02</span>
+                        <span><i class="fi fi-sr-clock-five"></i>15 Minutos</span>
+                    </div>
+
+                    <div class="Resumo">
+                        <h2>Resumo da Aula</h2>
+                        <span>Nesta aula, vimos como os povos indígenas e africanos foram essenciais para a formação do Brasil, influenciando a agricultura, artes, música, religião e culinária. Mesmo com a opressão, eles mantiveram suas culturas, enriquecendo a diversidade do país.</span>
+                    </div>
+
+                     <div class="Info__Buttons">
+                        <button style="--color: #a680d3; --text-color-info: #ffffff;"><i class="fi fi-sr-arrow-down-to-square"></i>Material de Apoio</button>
+                        <label style="--color: #a680d3; --text-color-info: #ffffff;"><input type="checkbox" name="Aula__Assistida">Aula Assistida</label>
+                        <button style="--color: #a680d3; --text-color-info: #ffffff;">Próxima Aula <i class="fi fi-br-arrow-small-right"></i></button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="Conteúdos__Container">
+               <div class="Módulo">
+                     <div class="Módulo__Header">
+                        <h2>Módulo 01 | História</h2>
+                     </div>
+
+                     <ul class="Conteúdos">
+                        <div class="Aula">
+                           <div class="Aula__Title"><i class="fi fi-sr-check-circle"></i><h2 class="Text">Introdução ao Curso</h2></div>
+                           <div class="Card__Info">
+                              <div class="Card__Aula">
+                                 <i class="fi fi-sr-play"></i>
+                                 <h1>Aula 1</h1>
+                              </div>
+
+                              <div class="Card__Time">
+                                 <i class="fi fi-sr-clock-three"></i>
+                                 <h1>12:10</h1>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="Aula">
+                           <div class="Aula__Title"><i class="fi fi-ss-circle blink"></i><h2 class="Text">História e Cultura Afro-Indígena Bra...</h2></div>
+                           <div class="Card__Info">
+                              <div class="Card__Aula">
+                                 <i class="fi fi-sr-play"></i>
+                                 <h1>Aula 2</h1>
+                              </div>
+
+                              <div class="Card__Time">
+                                 <i class="fi fi-sr-clock-three"></i>
+                                 <h1>15:01</h1>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="Aula">
+                           <div class="Aula__Title"><i class="fi fi-sr-lock"></i><h2 class="Text">Introdução ao Curso</h2></div>
+                           <div class="Card__Info">
+                              <div class="Card__Aula">
+                                 <i class="fi fi-sr-play"></i>
+                                 <h1>Aula 3</h1>
+                              </div>
+
+                              <div class="Card__Time">
+                                 <i class="fi fi-sr-clock-three"></i>
+                                 <h1>17:33</h1>
+                              </div>
+                           </div>
+                        </div>
+                     </ul>
+               </div>
+
+               <div class="Conteúdos__Progresso">
+                   <div class="Progresso__Header">
+                        <h2>Seu Progresso</h2>
+                        <span class="Progresso__Percentual">27%</span>
+                     </div>
+
+                     <p class="Progresso__Texto">4 de 15 aulas</p>
+                     <div class="Barra__Externa">
+                        <div class="Barra__Interna" style="width: 27%;"></div>
+                     </div>
+               </div>
+            </div>
+        </section>
+      </main>
+   </body>
+</html>
